@@ -30,6 +30,25 @@
       align-items: center;
       min-height: 100vh;
     }
+	.post {
+  background: var(--white);
+  width: 100%;
+  max-width: 50rem;
+  padding-bottom: 5rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.1rem 0.2rem var(--box-shadow);
+}
+
+.post__header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.2rem 1.6rem 0 1.6rem;
+}
+
+/* Header left */
+.header__left {
+  flex: 1;
+}
 .author__name:hover,
 .post__date:hover {
   text-decoration: underline;
@@ -333,9 +352,11 @@ location.href= './images/s1.html'; }}</script>
     </div>
 
     <div class="loader" id="loader"></div>
-
-    <div class="header">
-      <img src="./images/22.jpg" alt="Profile">
+<!-- Header left -->
+          <div class="header__left">
+            <a href="#"
+              ><img src="./images/22.jpg" class="post__author-pic"
+            /></a>
       <div class="header-info">
         <div class="name">Safana_oktavia</div>
         <div class="id">ID: 8791911</div>
